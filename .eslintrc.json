@@ -1,0 +1,22 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier", "@emotion", "@typescript-eslint"],
+  "rules": {
+    "prettier/prettier": "error",
+    "emotion/syntax-preference": [2, "string"],
+    "@emotion/styled-import": "error",
+    "@emotion/no-vanilla": "error"
+  }
+}
